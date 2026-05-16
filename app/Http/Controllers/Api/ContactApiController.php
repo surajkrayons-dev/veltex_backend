@@ -26,7 +26,7 @@ class ContactApiController extends Controller
             'message' => $request->message,
         ]);
 
-        Mail::to('suraj.krayons@gmail.com')
+        Mail::to('hello@veltexs.com')
             ->send(new ContactEnquiryMail($enquiry));
 
         return response()->json([
